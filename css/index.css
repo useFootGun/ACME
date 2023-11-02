@@ -3,8 +3,9 @@
 @import url("variables.css");
 
 body {
-    background-color: var(--clr-white);
     font-family: var(--ff-body);
+    background-color: var(--clr-white);
+    color: var(--clr-black);
 }
 
 /* utility classes */
@@ -14,13 +15,13 @@ body {
 }
 
 /* header styles */
-.head-top {
+.header-top-row {
     display: flex;
     justify-content: space-between;
     padding-block: 1rem; 
 }
 
-.head-bottom {
+.header-bottom-row {
     padding-block: 2.5rem;
     background-image: url("../img/photo/ACME_Background-Pattern.png");
 }
@@ -55,6 +56,29 @@ h1 {
     color: var(--clr-yellow)
 }
 
-/* breadcrumbs styles */
+/* breadcrumb styles */
 
+.breadcrumbs {
+    background-color: var(--clr-yellow);
+    padding-block: .25rem;
+
+    & div {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    & img {
+        height: var(--fs-300);
+    }
+
+    & a {
+        font-family: var(--ff-heading);
+        font-weight: var(--fw-regular);
+        font-size: var(--fs-300);
+        line-height: 24px;
+        text-decoration: none;
+        color: var(--clr-black)
+    }
+}
 
