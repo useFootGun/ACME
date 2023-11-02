@@ -12,8 +12,8 @@
 }
 
 /* Remove list styles on ul, ol elements */
-ul[role='list'],
-ol[role='list'] {
+ul,
+ol {
   list-style: none;
 }
 
@@ -30,11 +30,6 @@ body {
 /* Set core body defaults */
 body {
   text-rendering: optimizeSpeed;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
 }
 
 /* Make images easier to work with */
