@@ -1,0 +1,29 @@
+:root {
+    --clr-black: #000000;
+    --clr-ink: #2c3331;
+    --clr-white: #ffffff;
+    --clr-green: #2c594e;
+    --clr-green-middle: #758981;
+    --clr-green-light: #edefee;
+    --clr-yellow: #efb139;
+
+    --ff-body: "Montserrat", sans-serif;
+    --ff-heading: "Oswald", sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semi-bold: 600;
+
+    --fs-300: .75rem;
+    --fs-400: .875rem;
+    --fs-500: 1.25rem;
+    --fs-600: 1.5rem;
+    --fs-700: 4rem;
+}
+
+@media (width <= 375px) {
+    :root {
+        --fs-700: 2.5rem;
+    }
+}
