@@ -158,11 +158,11 @@
             </aside>
         </div>
     </main>
-    <footer>
-        <div>
-            <form>
+    <footer class="footer">
+        <div class="footer-top">
+            <form class="center grid">
                 <h2>Do you have any questions?</h2>
-                <div>
+                <div class="form-left">
                     <label for="name">Name</label>
                     <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10"/>
                     <label for="email">Email</label>
@@ -176,30 +176,35 @@
                         <option value="Finland">Finland</option>
                         <option value="Thailand">Thailand</option>
                     </select>
+                </div>
+                <div class="form-right">
                     <label for="message">Your Message</label>
                     <textarea id="message" name="message" rows="5" cols="33"></textarea>
                 </div>
-                <input type="checkbox" id="consent" name="consent" required/>
-                <label for="consent">I hereby consent to the processing of my data in accordance with the <a href="">privacy information</a></label>
-                <button>
-                    <div>Send</div>
-                </button>
+                <div class="form-bottom">
+                    <input type="checkbox" id="consent" name="consent" required/>
+                    <label for="consent">I hereby consent to the processing of my data in accordance with the <a href="">privacy information</a></label>
+                    <button>
+                        <img class="list-icon" src="img/icon/Arrow-Right.svg" alt=""/>
+                        SEND
+                    </button>
+                </div>
             </form>
         </div>
-        <div>
+        <div class="footer-bottom center">
             <div>
                 <a href="">Legal Notice</a>
                 <a href="">Privacy</a>
             </div>
-            <div>
+            <div class="social-links">
                 <a href="">
-                    <svg></svg>
+                    <img src="img/icon/Facebook.svg" alt="ttt"/>
                 </a>
                 <a href="">
-                    <svg></svg>
+                    <img src="img/icon/LinkedIn.svg" alt="vvv"/>
                 </a>
                 <a href="">
-                    <svg></svg>
+                    <img src="img/icon/Twitter.svg" alt="wwww"/>
                 </a>
             </div>
             <div>
