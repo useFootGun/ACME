@@ -8,72 +8,75 @@
 </head>
 <body>
     <header>
-        <div class="header-top-row center">
+        <div class="header-navigation global-width flex-between">
             <img class="logo" src="img/ACME_Logo.svg" alt="ACME logo"/>
-            <nav>
-                <ul>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">Industries</a></li>
-                    <li><a href="">Media</a></li>
-                    <li><a href="">Downloads</a></li>
-                    <li><a href="">Contacts</a></li>
+            <nav class="flex-end">
+                <ul class="flex-between nav-font">
+                    <li><a class="no-deco" href="">PRODUCTS</a></li>
+                    <li><a class="no-deco" href="">INDUSTRIES</a></li>
+                    <li><a class="no-deco" href="">MEDIA</a></li>
+                    <li><a class="no-deco" href="">DOWNLOADS</a></li>
+                    <li><a class="no-deco" href="">CONTACTS</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="header-bottom-row">
-            <h1 class="center">NEWS</h1>
+        <div class="header-title">
+            <h1 class="global-width h1-font">NEWS</h1>
+        </div>
+        <div class="header-breadcrumbs">
+            <div class="global-width flex-center crumbs-font">
+                <a class="no-deco" href="">MEDIA</a>
+                <img src="img/icon/Arrow-Right.svg" alt=""/>
+                <a class="no-deco" href="">NEWS</a>
+                <img src="img/icon/Arrow-Right.svg" alt=""/>
+                <a class="no-deco" role="link" aria-disabled="true">ARTICLE</a>
+            </div>
         </div>
     </header>
     <main>
-        <div class="breadcrumbs">
-            <div class="center">
-                <a href="">MEDIA</a>
-                <img src="img/icon/Arrow-Right.svg" alt=""/>
-                <a href="">NEWS</a>
-                <img src="img/icon/Arrow-Right.svg" alt=""/>
-                <a style="color:var(--clr-white)" role="link" aria-disabled="true">ARTICLE</a>
-            </div>
-        </div>
-        <div class="grid center">
-            <img class="top-image" src="img/photo/ACME_Article-Picture.jpg" alt="">
+        <div class="global-width grid-col">
+            <img class="full-width-photo" src="img/photo/ACME_Article-Picture.jpg" alt="">
+
+            <!-- Article Article Article Article Article -->
+
             <article>
-                <time datetime="2021-08-23">23 / 08 / 2021</time>
-                <h2>THE SMALLEST AND SHALLOWEST WORLD’S MAJOR OCEANS</h2>
+                <time class="info-font" datetime="2021-08-23">23 / 08 / 2021</time>
+                <h2 class="h2-font">THE SMALLEST AND SHALLOWEST WORLD’S MAJOR OCEANS</h2>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in (<a href="">Bookmarksgrove</a>) right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious (<a href="">Semikoli</a>), but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-                <h3>History</h3>
+                <h3 class="h3-font">History</h3>
                 <p>Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
-                <h4>Paleo-Eskimo culture</h4>
-                <ul class="test-ul">
-                    <li class="test-li">      
-                        <img class="test-img" src="img/icon/Arrowhead-Right3.svg" alt=""/>
+                <h4><strong>Paleo-Eskimo culture</strong></h4>
+                <ul class="bullet-points">
+                    <li class="flex">      
+                        <img src="img/icon/Arrowhead-Right3.svg" alt=""/>
                         Paleo-Eskimo groups included the Pres-Dorset (c. 3200-850 BC)
                     </li>
-                    <li class="test-li">
-                        <img class="test-img" src="img/icon/Arrowhead-Right3.svg" alt=""/>
+                    <li class="flex">
+                        <img src="img/icon/Arrowhead-Right3.svg" alt=""/>
                         the Saqqaq culture of Greenland (2500-800 BC)
                     </li>
-                    <li class="test-li">
-                        <img class="test-img" src="img/icon/Arrowhead-Right3.svg" alt=""/>
+                    <li class="flex">
+                        <img src="img/icon/Arrowhead-Right3.svg" alt=""/>
                         the Independence I and Independence II cultures of northeastern Canada and Greenland (c. 2400-1800 BC and c. 800-1 BC)
                     </li>
-                    <li class="test-li">
-                        <img class="test-img" src="img/icon/Arrowhead-Right3.svg" alt=""/>
+                    <li class="flex">
+                        <img src="img/icon/Arrowhead-Right3.svg" alt=""/>
                         the Groswater of Labrador and Nunavik</li>
-                    <li class="test-li">
-                        <img class="test-img" src="img/icon/Arrowhead-Right3.svg" alt=""/>
+                    <li class="flex">
+                        <img src="img/icon/Arrowhead-Right3.svg" alt=""/>
                         the Dorset culture (500 BC to AD 1500)
                     </li>
                 </ul>
                 <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again.<br/> 
                     And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
-                <figure>
-                    <div class="slide" src="img/photo/ACME_Article-Picture.jpg"></div>
-                    <figcaption>
+                <figure class="slideshow">
+                    <div class="slideshow__slide" src="img/photo/ACME_Article-Picture.jpg"></div>
+                    <figcaption class="info-font">
                         PICTURE 1 OF 5
                     </figcaption>
-                    <div class="slide-buttons">
+                    <div class="slideshow__buttons flex-col">
                         <button>
                             <img class="icon" src="img/icon/Arrowhead-Up.svg" alt="XXXXX"/>
                         </button>
@@ -84,72 +87,77 @@
                 </figure>
                 <p>Pityful a rethoric question ran over her cheek, then she continued her way. On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country.</p>
                 <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-                <blockquote>
-                    <div>
+                <blockquote class="quote">
+                    <div class="quote__inner-container flex-col">
                         <p>"The allied commitment to resupply the Soviet Union via its northern ports was opposed by the German naval and air forces."</p>
-                        <footer>Somebody, Another Corporation</footer>
+                        <cite>Somebody, Another Corporation</cite>
                     </div>
                 </blockquote>
                 <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
             </article>
-            <aside>
-                <div class="card">
-                    <h2 class="card__heading">CONTACT</h2>
-                    <div class="card__content">
-                        <img class="portrait" src="img/photo/ACME_Contact-Picture.jpg" alt=""/>
-                        <h3>MARK MUSTERMAN<span class="subtitle">MARKETING ASSISTENT</span></h3>
-                        <ul class="first-list">
-                            <li class="first-list-item">
+
+            <!-- Sidebar Sidebar Sidebar Sidebar Sidebar -->
+
+            <aside class="flex-col">
+                <div>
+                    <h2 class="card-header">CONTACT</h2>
+                    <div class="card">
+                        <img class="card__picture" src="img/photo/ACME_Contact-Picture.jpg" alt=""/>
+                        <h3 class="h2-font card-title">MARK MUSTERMAN
+                            <span class="subtitle">MARKETING ASSISTENT</span>
+                        </h3>
+                        <ul class="card__list">
+                            <li class="phone-icon flex-center">
                                 <a href="">+49 123 123 123 12</a>
                             </li>
-                            <li class="first-list-item">
+                            <li class="clock-icon flex-center">
                                 Mo/Tu/We: 8:00 a.m. - 8:00 p.m.
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="card">
-                    <h2 class="card__heading">DOWNLOADS</h2>
-                    <div class="card__content">
-                        <ul class="second-list">
-                            <li class="second-list-item">
-                                <button>
+                <div>
+                    <h2 class="card-header">DOWNLOADS</h2>
+                    <div class="card">
+                        <ul class="card__list">
+                            <li class="image-icon flex-center">
+                                <button class="dl-button info-font">
                                     <img class="list-icon" src="img/icon/Download.svg" alt=""/>
                                     NORTH POLE AS LAND
                                 </button>
                             </li>
-                            <li class="second-list-item">
-                                <button>
-                                    <img class="list-icon" src="img/icon/Download.svg" alt=""/>
+                            <li class="file-icon flex-center">
+                                <button class="dl-button info-font">
+                                    <img src="img/icon/Download.svg" alt=""/>
                                     EUROPEAN MERCATOR MAP
                                 </button>
                             </li>
-                            <li class="second-list-item">
-                                <button>
-                                    <img class="list-icon" src="img/icon/Download.svg" alt=""/>
+                            <li class="image-icon flex-center">
+                                <button class="dl-button info-font">
+                                    <img src="img/icon/Download.svg" alt=""/>
                                     EARLY CATOGRAPHYS AROUND 1957
                                 </button>
                             </li>
-                            <li class="second-list-item">
-                                <button>
-                                    <img class="list-icon" src="img/icon/Download.svg" alt=""/>
+                            <li class="file-icon flex-center">
+                                <button class="dl-button info-font">
+                                    <img src="img/icon/Download.svg" alt=""/>
                                     NORTH PASSAGE
                                 </button>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="card">
-                    <h2 class="card__heading">LINKS</h2>
-                    <div class="card__content">
-                        <ul class="third-list">
-                            <li class="third-list-item">
+                <div>
+                    <h2 class="card-header">LINKS</h2>
+                    <div class="card">
+                        <ul class="card__list">
+                            <li class="extern-icon flex-center">
                                 <a href="">UNENDLICHEWEITE.DE</a>
                             </li>
-                            <li class="third-list-item">
+                            <li class="link-icon flex-center">
                                 <a href="">ANOTHER ACME ARTICLE</a>
                             </li>
-                            <li class="third-list-item">
+                            <li class="extern-icon flex-center">
                                 <a href="">SOMEWHERE.ORG</a>
                             </li>
                         </ul>
@@ -158,52 +166,57 @@
             </aside>
         </div>
     </main>
-    <footer class="footer">
-        <div class="footer-top">
-            <form class="center grid">
-                <h2>Do you have any questions?</h2>
-                <div class="form-left">
+
+    <!-- Footer Footer Footer -->
+
+    <footer>
+        <div class="footer-form">
+            <form class="form global-width grid-col grid-row">
+                <h2 class="h2-font">Do you have any questions?</h2>
+                <div class="form__input">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10"/>
+                    <input type="text" id="name" name="name" required minlength="2" size="10"/>
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" required minlength="4" maxlength="8" size="10"/>
+                    <input type="text" id="email" name="email" required minlength="5" size="10"/>
                     <label for="phone">Phone (optional)</label>
-                    <input type="text" id="phone" name="phone" minlength="4" maxlength="8" size="10"/>
+                    <input type="text" id="phone" name="phone" minlength="10" size="10"/>
                     <label for="country">Country</label>
                     <select id="country" name="country" required>
                         <option value=""></option>
-                        <option value="Poland">Poland</option>
-                        <option value="Finland">Finland</option>
-                        <option value="Thailand">Thailand</option>
+                        <option value="Eins">Eins</option>
+                        <option value="Zwei">Zwei</option>
+                        <option value="Drei">Drei</option>
+                        <option value="Vier">Vier</option>
+                        <option value="Fünf">Fünf</option>
                     </select>
                 </div>
-                <div class="form-right">
+                <div class="form__text">
                     <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="5" cols="33"></textarea>
+                    <textarea id="message" name="message" rows="10" cols="33"></textarea>
                 </div>
-                <div class="form-bottom">
+                <div class="form__send flex-center">
                     <input type="checkbox" id="consent" name="consent" required/>
                     <label for="consent">I hereby consent to the processing of my data in accordance with the <a href="">privacy information</a></label>
-                    <button>
-                        <img class="list-icon" src="img/icon/Arrow-Right.svg" alt=""/>
+                    <button class="dl-button info-font">
+                        <img src="img/icon/Arrow-Right.svg" alt=""/>
                         SEND
                     </button>
                 </div>
             </form>
         </div>
-        <div class="footer-bottom center">
-            <div>
-                <a href="">Legal Notice</a>
-                <a href="">Privacy</a>
+        <div class="footer-credentials flex-center flex-between global-width">
+            <div class="flex-between">
+                <a class="legal-link" href="">Legal Notice</a>
+                <a class="legal-link" href="">Privacy</a>
             </div>
-            <div class="social-links">
-                <a href="">
+            <div class="flex-between">
+                <a class="social-link" href="">
                     <img src="img/icon/Facebook.svg" alt="ttt"/>
                 </a>
-                <a href="">
+                <a class="social-link" href="">
                     <img src="img/icon/LinkedIn.svg" alt="vvv"/>
                 </a>
-                <a href="">
+                <a class="social-link" href="">
                     <img src="img/icon/Twitter.svg" alt="wwww"/>
                 </a>
             </div>
