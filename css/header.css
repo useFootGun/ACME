@@ -1,21 +1,181 @@
 .header-navigation {
-    padding-block: 1rem; 
+    padding-block: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .header-title {
-    padding-block: 2.5rem;
+    padding-block: 3.5rem;
     background-image: url("../img/photo/ACME_Background-Pattern.png");
     background-position: 50% 25%;
     background-size: 115%;
 }
 
 .logo {
-    height: 4rem;
+    height: 2.25rem;
 }
 
-nav {
-    & li + li {
-        margin-left: 3rem;
+.navbar {
+    display: none;
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr-yellow);
+    align-items: center;
+    padding-left: 1rem;
+
+    & > ul {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+    }
+}
+
+.navbar-item {
+    position: relative;
+    display: inline-block;
+
+    .dropdown-button {
+        color: var(--clr-white);
+        position: relative;
+        background-color: transparent;
+        border: 0;
+        cursor: pointer;
+        padding-inline: 2rem;
+    }
+
+    .dropdown-container {
+        display: none;
+
+        & ul {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+            background-color: var(--clr-yellow);
+            margin: 1.2rem 0rem 0.4rem 4rem;
+            white-space: nowrap;
+        }
+
+        & a {
+            color: var(--clr-white);
+            text-decoration: none;
+        }
+    }
+}
+
+.burger-button {
+    display: flex;
+    align-items: flex-end;
+
+    & button {
+        border: none;
+        padding: 0.3rem;
+        background-color: var(--clr-yellow);
+
+        & img {
+            height: 1.75rem;
+            filter: invert(90%) sepia(82%) saturate(17%) hue-rotate(295deg) brightness(106%) contrast(100%);
+        }
+    }
+}
+
+.navbar.active {
+    display: flex;
+}    
+
+
+.navbar-item.active {
+    .dropdown-button {
+        color: var(--clr-green);
+    }
+    .dropdown-container {
+        display: block;
+    }
+}
+
+@media (orientation: landscape) {
+
+    .header-navigation {
+        padding-block: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 4rem;
+    }
+
+    .navbar {
+        display: flex;
+        align-items: flex-end;
+        position: unset;
+        background-color: transparent;
+        padding-left: 0;
+        inset: unset;
+
+        & > ul {
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+        }
+    }
+
+    .navbar-item {
+        position: relative;
+        display: inline-block;
+
+        &:hover {
+            .dropdown-button {color: var(--clr-green);}
+            .dropdown-container {display: block;}
+        }
+
+        .dropdown-button {
+            color: unset;
+            position: relative;
+            background-color: transparent;
+            border: 0;
+            cursor: pointer;
+            padding-inline: 2rem;
+        }
+
+        .dropdown-container {
+            position: absolute;
+            display: none;
+            padding-top: calc(1rem - 0.25rem);
+    
+            & ul {
+                display: flex;
+                flex-direction: column;
+                gap: 0.2rem;
+                background-color: var(--clr-yellow);
+                margin: unset;
+                padding: 2rem;
+                white-space: nowrap;
+            }
+
+            & a {
+                color: var(--clr-white);
+                text-decoration: none;
+                &:hover {color: var(--clr-green);}
+            }
+        }
+    }
+
+    .current-page {
+        .dropdown-button {
+            color: var(--clr-yellow)
+        }
+
+        &.navbar-item::before {
+            position: absolute;
+            border-bottom: solid 0.25rem var(--clr-yellow);
+            content: "";
+            width: 100%;
+            height: calc((1.35rem * 1.5) + 1rem);
+        }
+    }
+
+    .burger-button {
+        display: none;
     }
 }
 

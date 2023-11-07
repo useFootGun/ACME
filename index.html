@@ -8,17 +8,72 @@
 </head>
 <body>
     <header>
-        <div class="header-navigation global-width flex-between">
+        <div class="header-navigation global-width">
             <img class="logo" src="img/ACME_Logo.svg" alt="ACME logo"/>
-            <nav class="flex-end">
-                <ul class="flex-between nav-font">
-                    <li><a class="no-deco" href="">PRODUCTS</a></li>
-                    <li><a class="no-deco" href="">INDUSTRIES</a></li>
-                    <li><a class="no-deco" href="">MEDIA</a></li>
-                    <li><a class="no-deco" href="">DOWNLOADS</a></li>
-                    <li><a class="no-deco" href="">CONTACTS</a></li>
+            <nav class="navbar nav-font">
+                <ul>
+                    <li class="navbar-item">
+                        <button type="button" class="dropdown-button">PRODUCTS</button>
+                        <div class="dropdown-container">
+                            <ul>
+                                <li>
+                                    <a href="#">EINS PRODUCT</a>
+                                </li>
+                                <li>
+                                    <a href="#">ZWEI PRODUCT</a>
+                                </li>
+                                <li>
+                                    <a href="#">DREI PRODUCT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <button type="button" class="dropdown-button">INDUSTRIES</button>
+                        <div class="dropdown-container">
+                            <ul>
+                                <li>
+                                    <a href="#">AUTOMOTIVE</a>
+                                </li>
+                                <li>
+                                    <a href="#">AEROSPACE</a>
+                                </li>
+                                <li>
+                                    <a href="#">GENERAL INDUSTRIES</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="current-page navbar-item">
+                        <button type="button" class="dropdown-button">MEDIA</button>
+                        <div class="dropdown-container">
+                            <ul>
+                                <li>
+                                    <a href="#">EINS MEDIA</a>
+                                </li>
+                                <li>
+                                    <a href="#">ZWEI MEDIA</a>
+                                </li>
+                                <li>
+                                    <a href="#">DREI MEDIA</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="navbar-item">
+                        <button type="button" class="dropdown-button">DOWNLOADS</button>
+                    </li>
+                    <li class="navbar-item">
+                        <button type="button" class="dropdown-button">CONTACTS</button>
+                    </li>
                 </ul>
             </nav>
+            <div class="burger-button">
+                <button type="button">
+                    <img src="img/icon/Menu.svg" alt="ttt"/>
+                </button>
+            </div>
+
         </div>
         <div class="header-title">
             <h1 class="global-width h1-font">NEWS</h1>
@@ -33,13 +88,13 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="global-width grid-col">
-            <img class="full-width-photo" src="img/photo/ACME_Article-Picture.jpg" alt="">
+    <main class="main-container global-width">
+        <!-- <div class="main-container global-width grid-col"> -->
+            <img class="cover-photo" src="img/photo/ACME_Article-Picture.jpg" alt="">
 
             <!-- Article Article Article Article Article -->
 
-            <article>
+            <article class="article">
                 <time class="info-font" datetime="2021-08-23">23 / 08 / 2021</time>
                 <h2 class="h2-font">THE SMALLEST AND SHALLOWEST WORLD’S MAJOR OCEANS</h2>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in (<a href="">Bookmarksgrove</a>) right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
@@ -73,14 +128,14 @@
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
                 <figure class="slideshow">
                     <div class="slideshow__slide" src="img/photo/ACME_Article-Picture.jpg"></div>
-                    <figcaption class="info-font">
+                    <figcaption class="slideshow__caption info-font">
                         PICTURE 1 OF 5
                     </figcaption>
-                    <div class="slideshow__buttons flex-col">
-                        <button>
+                    <div class="slideshow__buttons">
+                        <button type="button">
                             <img class="icon" src="img/icon/Arrowhead-Up.svg" alt="XXXXX"/>
                         </button>
-                        <button>
+                        <button type="button">
                             <img class="icon" src="img/icon/Arrowhead_Down.svg" alt="YYYYY"/>
                         </button>
                     </div>
@@ -89,8 +144,8 @@
                 <p>But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their projects again and again. And if she hasn’t been rewritten, then they are still using her.Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
                 <blockquote class="quote">
                     <div class="quote__inner-container flex-col">
-                        <p>"The allied commitment to resupply the Soviet Union via its northern ports was opposed by the German naval and air forces."</p>
-                        <cite>Somebody, Another Corporation</cite>
+                        <p>"The Allied commitment to resupply the Soviet Union via its northern ports was opposed by the German naval and air forces."</p>
+                        <cite class="info-font">SOMEBOY, ANON CORPORATION</cite>
                     </div>
                 </blockquote>
                 <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
@@ -121,25 +176,25 @@
                     <div class="card">
                         <ul class="card__list">
                             <li class="image-icon flex-center">
-                                <button class="dl-button info-font">
+                                <button type="button" class="dl-button info-font">
                                     <img class="list-icon" src="img/icon/Download.svg" alt=""/>
                                     NORTH POLE AS LAND
                                 </button>
                             </li>
                             <li class="file-icon flex-center">
-                                <button class="dl-button info-font">
+                                <button type="button" class="dl-button info-font">
                                     <img src="img/icon/Download.svg" alt=""/>
                                     EUROPEAN MERCATOR MAP
                                 </button>
                             </li>
                             <li class="image-icon flex-center">
-                                <button class="dl-button info-font">
+                                <button type="button" class="dl-button info-font">
                                     <img src="img/icon/Download.svg" alt=""/>
                                     EARLY CATOGRAPHYS AROUND 1957
                                 </button>
                             </li>
                             <li class="file-icon flex-center">
-                                <button class="dl-button info-font">
+                                <button type="button" class="dl-button info-font">
                                     <img src="img/icon/Download.svg" alt=""/>
                                     NORTH PASSAGE
                                 </button>
@@ -164,24 +219,24 @@
                     </div>
                 </div>
             </aside>
-        </div>
+        <!-- </div> -->
     </main>
 
     <!-- Footer Footer Footer -->
 
     <footer>
-        <div class="footer-form">
-            <form class="form global-width grid-col grid-row">
+        <div class="contact-container">
+            <form class="form global-width" data-js="form">
                 <h2 class="h2-font">Do you have any questions?</h2>
                 <div class="form__input">
                     <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required minlength="2" size="10"/>
+                    <input type="text" id="name" name="name" minlength="2" autocomplete="name" required/>
                     <label for="email">Email</label>
-                    <input type="text" id="email" name="email" required minlength="5" size="10"/>
+                    <input type="text" id="email" name="email" minlength="5" autocomplete="email" required/>
                     <label for="phone">Phone (optional)</label>
-                    <input type="text" id="phone" name="phone" minlength="10" size="10"/>
+                    <input type="text" id="phone" name="phone" minlength="10" autocomplete="tel"/>
                     <label for="country">Country</label>
-                    <select id="country" name="country" required>
+                    <select id="country" name="country" autocomplete="country" required>
                         <option value=""></option>
                         <option value="Eins">Eins</option>
                         <option value="Zwei">Zwei</option>
@@ -192,36 +247,39 @@
                 </div>
                 <div class="form__text">
                     <label for="message">Your Message</label>
-                    <textarea id="message" name="message" rows="10" cols="33"></textarea>
+                    <textarea id="message" name="message" rows="6" cols="30" required></textarea>
+                    <dialog id="dialog" class="h2-font">
+                        <p>Thank you for your message!</p>
+                    </dialog>
                 </div>
-                <div class="form__send flex-center">
+                <div class="form__send">
                     <input type="checkbox" id="consent" name="consent" required/>
                     <label for="consent">I hereby consent to the processing of my data in accordance with the <a href="">privacy information</a></label>
-                    <button class="dl-button info-font">
+                    <button type="submit" class="dl-button info-font">
                         <img src="img/icon/Arrow-Right.svg" alt=""/>
                         SEND
                     </button>
                 </div>
             </form>
         </div>
-        <div class="footer-credentials flex-center flex-between global-width">
-            <div class="flex-between">
-                <a class="legal-link" href="">Legal Notice</a>
-                <a class="legal-link" href="">Privacy</a>
+        <div class="credentials global-width">
+            <div class="credentials__legal">
+                <a href="">Legal Notice</a>
+                <a href="">Privacy</a>
             </div>
-            <div class="flex-between">
-                <a class="social-link" href="">
+            <div class="credentials__social">
+                <a href="">
                     <img src="img/icon/Facebook.svg" alt="ttt"/>
                 </a>
-                <a class="social-link" href="">
+                <a href="">
                     <img src="img/icon/LinkedIn.svg" alt="vvv"/>
                 </a>
-                <a class="social-link" href="">
+                <a href="">
                     <img src="img/icon/Twitter.svg" alt="wwww"/>
                 </a>
             </div>
-            <div>
-                ©2021 ACME. Part of the <a href="">ACME group</a>
+            <div class="credentials__copy">
+                ©2021 ACME. Part of the&nbsp;<a href="">ACME group</a>
             </div>
         </div>
     </footer>
