@@ -22,12 +22,12 @@ function handleDropdown() {
 }
 
 function checkWindowSize() {
-    const mediaQuery = window.matchMedia("(max-width: 800px)");
+    const mediaQuery = window.matchMedia("(min-width: 800px)");
 
     if(activeDropdown) {
         activeDropdown.classList.remove("active");
     }
-    if(mediaQuery.matches) {
+    if(!mediaQuery.matches) {
         handleDropdown();
     }
 }

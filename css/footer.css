@@ -146,7 +146,7 @@ footer {
     transition: opacity 2s;
 } */
 
-@media (orientation: landscape) {
+@media (width >= 50em) {
 
     .form {
         display: grid;

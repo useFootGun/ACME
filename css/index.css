@@ -6,11 +6,23 @@
 main {
     padding-block: 3rem;
 }
-/* 
+
 .main-container {
     display: flex;
     flex-direction: column;
-} */
+}
+
+@media (width >= 50em) {
+    main {
+        padding-block: 4rem;
+    }
+
+    .main-container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        column-gap: 1rem;
+    }
+}
 
 /* styles for article styles for article styles for article styles for article */
 /* styles for article styles for article styles for article styles for article */
@@ -40,11 +52,25 @@ main {
     }
 }
 
+@media (width >= 50em) {
+    .article {
+        grid-column: 1/5;
+        margin-bottom: 0;
+    }
+}
+
 .cover-photo {
     width: 100%;
     aspect-ratio: 16/5;
     object-fit: cover;
     margin-bottom: 0.5rem;
+}
+
+@media (width >= 50em) {
+    .cover-photo {
+        grid-column: 1/7;
+        margin-bottom: 4rem;
+    }
 }
 
 /* list im text styles list im text styles list im text styles list im text styles */
@@ -59,11 +85,6 @@ main {
         margin-left: 2.8rem;
     }
 
-    /* & img {
-        height: 1.15rem;
-        margin-right: 1.5rem;
-    } */
-
     & li + li {
         margin-top: 0.7rem; 
     }
@@ -77,38 +98,11 @@ main {
         width: 1.6rem;
         background-size: contain;
         background-repeat: no-repeat;
-        /* margin-top: 0.5rem; */
         margin-left: -2.8rem;
         margin-top: -0.15rem;
         background-image: url("../img/icon/Arrowhead-Right.svg");
     } 
 }
-
-/* 
-& li {
-    display: flex;
-}
-
-& li + li {
-    margin-top: 0.7rem; 
-}
-
-& li::before {
-    content: "";
-    display: inline-block;
-    flex-shrink: 0;
-    height: 1.6rem;
-    width: 1.6rem;
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin-top: 0.5rem;
-    margin-inline: 0.2rem 1.2rem;
-    opacity: 0.3;
-} 
-
-background-image: url("../img/icon/Arrowhead-Right.svg");
-
-*/
 
 /* slider styles slider styles slider styles slider styles slider styles */
 /* slider styles slider styles slider styles slider styles slider styles */
@@ -125,7 +119,7 @@ background-image: url("../img/icon/Arrowhead-Right.svg");
     }
 }
 
-@media (orientation: landscape) {
+@media (width >= 50em) {
     .slideshow {
         position: relative;
         width: unset;
@@ -142,7 +136,7 @@ background-image: url("../img/icon/Arrowhead-Right.svg");
     display: none;
 }
 
-@media (orientation: landscape) {
+@media (width >= 50em) {
 
     .slideshow__buttons {
         position: absolute;
@@ -204,7 +198,7 @@ background-image: url("../img/icon/Arrowhead-Right.svg");
     }   
 }
 
-@media (orientation: landscape) {
+@media (width >= 50em) {
     .quote {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -225,6 +219,12 @@ aside {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+}
+
+@media (width >= 50em) {
+    aside {
+        grid-column: 5/7;
+    }
 }
 
 .card-header {
@@ -265,7 +265,6 @@ aside {
 .card__list {
     & li {
         display: flex;
-        /* align-items: center; */
     }
 
     & li + li {
@@ -309,31 +308,4 @@ aside {
 }
 .link-icon::before {
     background-image: url("../img/icon/Link.svg");
-}
-
-@media (orientation: landscape) {
-    main {
-        padding-block: 4rem;
-    }
-
-    .main-container {
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        column-gap: 1rem;
-    }
-
-    .cover-photo {
-        grid-column: 1/7;
-        margin-bottom: 4rem;
-        object-position: 50% 42%;
-    }
-
-    .article {
-        grid-column: 1/5;
-        margin-bottom: 0;
-    }
-
-    aside {
-        grid-column: 5/7;
-    }
 }

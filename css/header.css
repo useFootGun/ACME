@@ -11,7 +11,7 @@
     background-size: 115%;
 }
 
-@media (orientation: landscape) {
+@media (width >= 50em) {
     .header-title {
         padding-block: 3.5rem;
     }
@@ -19,6 +19,18 @@
 
 .logo {
     height: 2.25rem;
+}
+
+@media (width >= 50em) {
+    .header-navigation {
+        padding-block: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        height: 4rem;
+    }
 }
 
 .navbar {
@@ -98,18 +110,7 @@
     }
 }
 
-@media (orientation: landscape) {
-
-    .header-navigation {
-        padding-block: 1rem;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .logo {
-        height: 4rem;
-    }
-
+@media (width >= 50em) {
     .navbar {
         display: flex;
         align-items: flex-end;
@@ -166,6 +167,10 @@
         }
     }
 
+    .burger-button {
+        display: none;
+    }
+
     .current-page {
         .dropdown-button {
             color: var(--clr-yellow)
@@ -178,10 +183,6 @@
             width: 100%;
             height: calc((1.35rem * 1.5) + 1rem);
         }
-    }
-
-    .burger-button {
-        display: none;
     }
 }
 
