@@ -24,8 +24,12 @@ function handleDropdown() {
 function checkWindowSize() {
     const mediaQuery = window.matchMedia("(max-width: 800px)");
 
-    if(activeDropdown) {activeDropdown.classList.remove("active");}
-    if(mediaQuery.matches) {handleDropdown();}
+    if(activeDropdown) {
+        activeDropdown.classList.remove("active");
+    }
+    if(mediaQuery.matches) {
+        handleDropdown();
+    }
 }
 
 burgerButton.addEventListener("click", () => {
@@ -40,27 +44,59 @@ const closeDialogButton = document.getElementById("closeDialog");
 
 form.addEventListener("submit", (event) => {
     event.preventDefault();
-    const formElements = event.target.elements
-//   console.log(formElements);
-//   console.log(formElements.consent.checked);
-
+    const formElements = event.target.elements;
     if (form.checkValidity()) {
-        dialog.showModal();
+        console.log(formElements);
     }
-    // event.target.reset();
+    event.target.reset();
 });
 
-// closeDialogButton.addEventListener("click", function () {
-//     dialog.close();
-// });
+// function ResizePlugin(slider) {
+//     var observer = new ResizeObserver(function () {
+//       slider.update();
+//     });
 
-dialog.addEventListener("click", event => {
-    const rect = dialog.getBoundingClientRect();
-    if (event.clientY < rect.top || event.clientY > rect.bottom ||
-        event.clientX < rect.left || event.clientX > rect.right) {
-        dialog.close();
-    }
-});
+//     slider.on("created", () => {
+//       observer.observe(slider.container);
+//     });
+//     slider.on("destroyed", () => {
+//       observer.unobserve(slider.container);
+//     });
+// };
+
+function navigation(slider) {
+    const caption = document.querySelector(".slideshow__caption");
+    const prevButton = document.getElementById("prev");
+    const nextButton = document.getElementById("next");
+    console.log(prevButton, nextButton);
+    prevButton.addEventListener("click", () => {
+      slider.prev();
+    });
+    nextButton.addEventListener("click", () => {
+      slider.next();
+    });
+
+    slider.on("slideChanged", () => {
+        const slide = slider.track.details.rel + 1;
+        caption.textContent=`PICTURE ${slide} OF 5`;
+    })    
+}
+
+var slider = new KeenSlider("#my-keen-slider", {
+    loop: "true",
+}, [navigation]);
 
 window.addEventListener("resize", checkWindowSize);
 checkWindowSize();
+
+
+// dialog.addEventListener("click", event => {
+//     const rect = dialog.getBoundingClientRect();
+//     if (event.clientY < rect.top || event.clientY > rect.bottom ||
+//         event.clientX < rect.left || event.clientX > rect.right) {
+//         dialog.close();
+//     }
+// });
+// closeDialogButton.addEventListener("click", function () {
+//     dialog.close();
+// });

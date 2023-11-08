@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" type="text/css" href="css/keen-slider.css" />
     <title>News</title>
 </head>
 <body>
@@ -127,15 +128,31 @@
                     And if she hasn’t been rewritten, then they are still using her. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
                 <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
                 <figure class="slideshow">
-                    <div class="slideshow__slide" src="img/photo/ACME_Article-Picture.jpg"></div>
+                    <div id="my-keen-slider" class="keen-slider">
+                        <div class="keen-slider__slide number-slide">
+                            <img src="/img/photo/ACME_Slideshow1.jpg" alt=""></img>
+                        </div>
+                        <div class="keen-slider__slide number-slide">
+                            <img src="/img/photo/ACME_Slideshow2.jpg" alt=""></img>
+                        </div>
+                        <div class="keen-slider__slide number-slide">
+                            <img src="/img/photo/ACME_Slideshow3.jpg" alt=""></img>
+                        </div>
+                        <div class="keen-slider__slide number-slide">
+                            <img src="/img/photo/ACME_Slideshow4.jpg" alt=""></img>
+                        </div>
+                        <div class="keen-slider__slide number-slide">
+                            <img src="/img/photo/ACME_Slideshow5.jpg" alt=""></img>
+                        </div>
+                    </div>
                     <figcaption class="slideshow__caption info-font">
                         PICTURE 1 OF 5
                     </figcaption>
                     <div class="slideshow__buttons">
-                        <button type="button">
+                        <button id="prev" type="button">
                             <img class="icon" src="img/icon/Arrowhead-Up.svg" alt="XXXXX"/>
                         </button>
-                        <button type="button">
+                        <button id="next" type="button">
                             <img class="icon" src="img/icon/Arrowhead_Down.svg" alt="YYYYY"/>
                         </button>
                     </div>
@@ -283,6 +300,10 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script src="js/keen-slider.js"></script>
+    <script src="js/index.js"></script>
+    <!-- 
+     <script type="text/javascript">
+    -->
 </body>
 </html>
