@@ -5,7 +5,7 @@
 }
 
 .header-title {
-    padding-block: 2.5rem;
+    padding-block: 2.2rem;
     background-image: url("../img/photo/ACME_Background-Pattern.png");
     background-position: 50% 25%;
     background-size: 115%;
@@ -193,9 +193,20 @@
     background-color: var(--clr-yellow);
     padding-block: 0.25rem;
 
+    & div {
+        display: flex;
+        align-items: center;
+
+    }
+
     & img {
         height: var(--fs-300);
         margin-inline: 1rem;
+    }
+
+    & a {
+        color: var(--clr-ink);
+        text-decoration: none;
     }
 
     & a:last-of-type {

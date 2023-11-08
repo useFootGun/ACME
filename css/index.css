@@ -4,24 +4,26 @@
 @import url("footer.css");
 
 main {
+    display: flex;
+    flex-direction: column;
     padding-block: 3rem;
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-}
+/* .main-container {
+
+} */
 
 @media (width >= 50em) {
     main {
-        padding-block: 4rem;
-    }
-
-    .main-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         column-gap: 1rem;
+        padding-block: 3.5rem 5.5rem;
     }
+
+    /* .main-container {
+
+    } */
 }
 
 /* styles for article styles for article styles for article styles for article */
@@ -69,7 +71,7 @@ main {
 @media (width >= 50em) {
     .cover-photo {
         grid-column: 1/7;
-        margin-bottom: 4rem;
+        margin-bottom: 3rem;
     }
 }
 
@@ -185,6 +187,8 @@ main {
 }
 
 .quote__inner-container {
+    display: flex;
+    flex-direction: column;
     grid-column: 2/7;
 
     & cite {
@@ -229,11 +233,17 @@ aside {
 
 .card-header {
     font-family: var(--ff-heading);
-    font-size: var(--fs-700);
+    font-size: 3.25rem;
     font-weight: var(--fw-medium);
     color: var(--clr-green-light);
     line-height: 0.87;
     transform: translate(-0.06em);
+}
+
+@media (width >= 50em) {
+    .card-header {
+        font-size: clamp(2.8rem, 0.4000rem + 4.8000vw, 4rem); 
+    }
 }
 
 .card {
@@ -265,6 +275,7 @@ aside {
 .card__list {
     & li {
         display: flex;
+        align-items: center;
     }
 
     & li + li {
@@ -289,23 +300,9 @@ aside {
     }
 }
 
-.phone-icon::before {
-    background-image: url("../img/icon/Phone.svg");
-}
-.clock-icon::before {
-    background-image: url("../img/icon/Clock.svg");
-}
-
-.image-icon::before {
-    background-image: url("../img/icon/Image.svg");
-}
-.file-icon::before {
-    background-image: url("../img/icon/File.svg");
-}
-
-.extern-icon::before {
-    background-image: url("../img/icon/Extern-Link.svg");
-}
-.link-icon::before {
-    background-image: url("../img/icon/Link.svg");
-}
+.phone-icon::before {background-image: url("../img/icon/Phone.svg");}
+.clock-icon::before {background-image: url("../img/icon/Clock.svg");}
+.image-icon::before {background-image: url("../img/icon/Image.svg");}
+.file-icon::before {background-image: url("../img/icon/File.svg");}
+.extern-icon::before {background-image: url("../img/icon/Extern-Link.svg");}
+.link-icon::before {background-image: url("../img/icon/Link.svg");}
