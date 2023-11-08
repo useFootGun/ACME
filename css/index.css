@@ -55,14 +55,60 @@ main {
     margin-bottom: 1.5rem;
 
     & li {
-        margin-block: 0.8rem;
+        display: flex;
+        margin-left: 2.8rem;
     }
 
-    & img {
+    /* & img {
         height: 1.15rem;
         margin-right: 1.5rem;
+    } */
+
+    & li + li {
+        margin-top: 0.7rem; 
     }
+
+    & li::before {
+        position: absolute;
+        content: "";
+        display: inline-block;
+        flex-shrink: 0;
+        height: 1.6rem;
+        width: 1.6rem;
+        background-size: contain;
+        background-repeat: no-repeat;
+        /* margin-top: 0.5rem; */
+        margin-left: -2.8rem;
+        margin-top: -0.15rem;
+        background-image: url("../img/icon/Arrowhead-Right.svg");
+    } 
 }
+
+/* 
+& li {
+    display: flex;
+}
+
+& li + li {
+    margin-top: 0.7rem; 
+}
+
+& li::before {
+    content: "";
+    display: inline-block;
+    flex-shrink: 0;
+    height: 1.6rem;
+    width: 1.6rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 0.5rem;
+    margin-inline: 0.2rem 1.2rem;
+    opacity: 0.3;
+} 
+
+background-image: url("../img/icon/Arrowhead-Right.svg");
+
+*/
 
 /* slider styles slider styles slider styles slider styles slider styles */
 /* slider styles slider styles slider styles slider styles slider styles */
@@ -140,7 +186,7 @@ main {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 0.3125rem;
-    margin-block: 2rem;
+    margin-block: 2.5rem;
     background: linear-gradient(to right, var(--clr-green-light) calc((100% - 0.3125rem) / 2), transparent 0);
 }
 
@@ -216,6 +262,11 @@ aside {
 }
 
 .card__list {
+    & li {
+        display: flex;
+        /* align-items: center; */
+    }
+
     & li + li {
         margin-top: 0.7rem; 
     }
@@ -228,6 +279,7 @@ aside {
         width: 1.6rem;
         background-size: contain;
         background-repeat: no-repeat;
+        margin-top: 0.5rem;
         margin-inline: 0.2rem 1.2rem;
         opacity: 0.3;
     }

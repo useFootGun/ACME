@@ -241,16 +241,37 @@ a {
 /* button classes */
 
 .dl-button {
-  border: 0;
-  background-color: var(--clr-yellow);
-  padding: 0.2rem 1rem 0.2rem 0.4rem;
   display: flex;
   align-items: center;
-  gap: 0.9rem;
+  border: 0;
+  background-color: var(--clr-yellow);
+  padding: 0.6rem 1rem 0.6rem 0.4rem;
   cursor: pointer;
 
-  & img {
+  /* & img {
       height: 1.6rem;
+      filter: invert(90%) sepia(100%) saturate(2%) hue-rotate(319deg) brightness(107%) contrast(100%);
+  } */
+
+  & div {
+    display: inline-block;
+    align-items: center;
+    text-align: start;
+    margin-left: 2.5rem;
+  }
+
+  & div::before {
+      content: "";
+      position: absolute;
+      display: inline-block;
+      align-items: center;
+      margin-left: -2.5rem;
+      margin-top: -0.2rem;
+      height: 1.8rem;
+      width: 1.8rem;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url("../img/icon/Download.svg");
       filter: invert(90%) sepia(100%) saturate(2%) hue-rotate(319deg) brightness(107%) contrast(100%);
   }
 }
