@@ -68,7 +68,6 @@ function navigation(slider) {
     const caption = document.querySelector(".slideshow__caption");
     const prevButton = document.getElementById("prev");
     const nextButton = document.getElementById("next");
-    console.log(prevButton, nextButton);
     prevButton.addEventListener("click", () => {
       slider.prev();
     });
@@ -82,7 +81,7 @@ function navigation(slider) {
     })    
 }
 
-var slider = new KeenSlider("#my-keen-slider", {
+const slider = new KeenSlider("#keen", {
     loop: "true",
 }, [navigation]);
 
