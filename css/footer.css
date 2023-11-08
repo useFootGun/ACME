@@ -38,7 +38,7 @@ footer {
         appearance: none;
         border-radius: 0;
         border: 0;
-        background-image: url("../img/icon/Arrowhead_Down.svg");
+        background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"><path fill="%232c3331" d="M11.4,15.8c0.2,0.1,0.4,0.2,0.6,0.2c0.2,0,0.4,0,0.6-0.2l6-4.8c0,0,0,0,0.1,0c0.4-0.4,0.4-1,0.1-1.4c0,0,0,0,0,0c-0.3-0.4-1-0.5-1.4-0.1L12,13.7L6.6,9.2C6.2,8.9,5.6,8.9,5.2,9.4s-0.3,1.1,0.1,1.4L11.4,15.8z"/></svg>');
         background-repeat: no-repeat;
         background-position: right .7em top 50%, 0 0;
         background-size: 1.5em auto, 100%;
@@ -91,6 +91,10 @@ footer {
 
     & button {
         margin-left: auto;
+
+        & div::before {
+            background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="_x30_1_x5F_Contact-Female" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 24 24"> <path fill="%23ffffff" d="M5,13h11.9l-3.6,4.4c-0.4,0.4-0.3,1.1,0.1,1.4c0.4,0.4,1.1,0.3,1.4-0.1l5-6c0,0,0.1-0.1,0.1-0.2 c0,0,0-0.1,0.1-0.1c0-0.1,0.1-0.2,0.1-0.4c0-0.1,0-0.2-0.1-0.4c0-0.1,0-0.1-0.1-0.1c0-0.1-0.1-0.1-0.1-0.2l-5-6 C14.6,5.1,14.3,5,14,5c-0.2,0-0.5,0.1-0.6,0.2c-0.4,0.4-0.5,1-0.1,1.4c0,0,0,0,0,0l3.6,4.4H5c-0.6,0-1,0.4-1,1C4,12.6,4.4,13,5,13z" /> </svg>');
+        }
     }
 }
 
