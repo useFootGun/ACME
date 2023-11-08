@@ -5,10 +5,16 @@
 }
 
 .header-title {
-    padding-block: 3.5rem;
+    padding-block: 2.5rem;
     background-image: url("../img/photo/ACME_Background-Pattern.png");
     background-position: 50% 25%;
     background-size: 115%;
+}
+
+@media (orientation: landscape) {
+    .header-title {
+        padding-block: 3.5rem;
+    }
 }
 
 .logo {

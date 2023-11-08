@@ -249,13 +249,14 @@ aside {
 
 .card-title {
     color: var(--clr-ink);
-    margin-block: 1.5rem 1rem;
+    margin-block: 1rem 0.6rem;
 
     & .subtitle {
         display: block;
         font-family: var(--ff-body);
         font-weight: var(--fw-light);
         line-height: 1.6;
+        margin-top: 0.4rem;
         font-size: var(--fs-400);
         color: var(--clr-ink);
     }
@@ -282,6 +283,10 @@ aside {
         margin-top: 0.5rem;
         margin-inline: 0.2rem 1.2rem;
         opacity: 0.3;
+    }
+    
+    & a {
+        margin-top: 0.5rem;
     }
 }
 
