@@ -15,7 +15,6 @@ function handleDropdown() {
             if (activeDropdown && activeDropdown !== dropdown) {
                 activeDropdown.classList.remove("active");
             }
-    
             dropdown.classList.toggle("active");
             activeDropdown = dropdown;
         });
@@ -38,7 +37,6 @@ function checkWindowSize() {
 
 menuButton.addEventListener("click", () => {
     navBar.classList.toggle("active");
-
     if(navBar.classList.contains("active")) {
         menuPath.setAttribute("d", closeIcon);
     } else {
